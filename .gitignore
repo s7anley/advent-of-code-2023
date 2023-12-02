@@ -1,0 +1,11 @@
+.idea
+.gradle/
+build/
+out/
+.DS_Store
+
+# Ignore all .txt files in the specified directory
+src/main/resources/*.txt
+
+# Unignore files ending with -example.txt
+!src/main/resources/*-example*.txt
