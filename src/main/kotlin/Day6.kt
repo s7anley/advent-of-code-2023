@@ -2,10 +2,6 @@ import Resources.resourceAsListOfString
 
 private data class Race(val time: Long, val distanceRecord: Long)
 
-private fun extractNumbers(str: String): List<Long> = "\\d+".toRegex().findAll(str).map { it.value.toLong() }.toList()
-
-private fun extractAsOneNumber(str: String): Long = extractNumbers(str).joinToString(separator = "").toLong()
-
 private fun solvePart1(input: List<String>): Int {
     val (timeList, distanceList) = input.map { extractNumbers(it) }
     val races = timeList.zip(distanceList) { time, distance -> Race(time, distance) }
