@@ -1,6 +1,6 @@
 import Resources.resourceAsListOfString
 
-enum class HandType {
+private enum class HandType {
     FIVE_OF_A_KIND,
     FOUR_OF_A_KIND,
     FULL_HOUSE,
